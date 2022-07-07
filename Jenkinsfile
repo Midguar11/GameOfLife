@@ -43,8 +43,8 @@ ADD gameoflife.war /usr/local/tomcat/webapps
 CMD ["catalina.sh","run"]
 EXPOSE 8080
 EOT
-docker build -t tomcat:1.0 . 
-docker run -itd --name tomcatwebserver -p 8888:8080 tomcat:1.0'''
+docker build -t tomcat:9.0 . 
+docker run -itd --name tomcatwebserver -p 8888:8080 tomcat:9.0'''
             }
         }
     }
