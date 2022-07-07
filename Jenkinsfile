@@ -13,14 +13,7 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        
-        stage('Maven Test'){
-            agent any
-            steps{
-                sh 'mvn test'
-            }
-        }
-        
+             
         stage('Maven Package'){
             agent any
             steps{
