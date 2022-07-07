@@ -6,6 +6,13 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Midguar11/GameOfLife.git'
             }
         }
+
+          stage('Maven Complie'){
+            agent any
+            steps{
+                sh 'mvn compile'
+            }
+        }
         
         stage('Maven Test'){
             agent any
