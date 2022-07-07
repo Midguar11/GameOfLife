@@ -37,7 +37,7 @@ mkdir dockerimg
 cd dockerimg
 cp /var/lib/jenkins/workspace/Practice/Continous_Deployment/target/gameoflife.war .
 touch dockerfile
-cat "2Angle Brackets"EOT "2Angle Brackets"  dockerfile
+cat <<EOT>>dockerfile
 FROM tomcat
 ADD gameoflife.war /usr/local/tomcat/webapps
 CMD ["catalina.sh","run"]
